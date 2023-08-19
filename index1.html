@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Interactive Card Design</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left__bar">
+      <img src="/images/bg-main-desktop.png" alt="" class="header_img" />
+      <img src="/images/bg-main-mobile.png" alt="" class="header-mobile">
+
+    </div>
+    <div class="right__bar">
+      <form action="">
+        <div class="name">
+          <label for="user" class="label"> Cardholder Name</label>
+          <input type="text" id="name" placeholder="e.g. Jane Appleseed" />
+        </div>
+        <div class="number">
+          <label for="user" id="number" class="label"> Card Number</label>
+          <input type="text" id="user" maxlength= '16' placeholder="e.g. 1234 5678 9123 0000" />
+        </div>
+        <div class="last_input">
+          <div class="exp">
+            <label for="">EXP.DATE (MM/YY)</label>
+            <input type="text"   id="month" maxlength = '2' placeholder="MM" />
+            <input type="text"  id="year" maxlength = '2'placeholder="YY" />
+          </div>
+          <div class="cvc">
+            <label for="CVC">CVC</label>
+            <input type="text" placeholder = "e.g.123" maxlength="3"/>
+          </div>
+        </div>
+        <input type="submit" value="Confirm" id="input-submit" />
+      </form>
+    </div>
+    <div>
+      <img src="/images/bg-card-front.png" alt="" class="front" />
+      <p class="card_num">0000 0000 0000 0000</p>
+      <p class="card_name"> Jane Appleseed</p>
+      <p class="card_exp"> 00/00</p>
+      <img src="/images/bg-card-back.png" alt="" class="back" />
+      <p class="back-num">000</p>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
