@@ -130,7 +130,7 @@ label {
     grid-template-columns: 1fr;
     width: 100%;
     /* max-height: 100vh; */
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .header-mobile {
     display: block;
